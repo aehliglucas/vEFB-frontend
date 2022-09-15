@@ -1,3 +1,5 @@
+menu_is_shown = false;
+
 // Rendering UTC time in top bar
 function render_top_bar_time() {
     d = new Date();
@@ -17,11 +19,35 @@ function render_top_bar_welcome() {
     baseDiv.appendChild(element)
 }
 
+function show_menu() {
+    return
+}
 
+function open_settings() {
+    alert("Settings are work in progress...")
+}
+
+function show_context_menu() {
+    menu = document.getElementById('menu-select')
+    if(!menu_is_shown) {
+        menu.style.display = "block";
+        menu_is_shown = true;
+    } else {
+        menu.style.display = "none";
+        menu_is_shown = false;
+    }
+}
+
+// function make_menu_usable_on_mobile() {
+//     document.getElementById('btn-settings').ontouchstart = function (e) {
+//         alert("Menu is work in progress...")
+//     }
+// }
 
 // Functions that should be executed when the window is fully loaded
 window.onload = function() {
     render_top_bar_time();
-    setInterval(render_top_bar_time, 5000);
+    setInterval(render_top_bar_time, 1000);
     render_top_bar_welcome()
+    // make_menu_usable_on_mobile()
 }
