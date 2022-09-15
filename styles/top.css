@@ -1,0 +1,80 @@
+body {
+    background-color: #000833; 
+}
+
+#top-bar {
+    display: table;
+    height: 4vh
+}
+
+.top-bar-text {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.8vh;
+    vertical-align: top !important;
+}
+
+.top-bar-item {
+    height: 1.8vh;
+    margin-top: 0 !important;
+    display:table-cell
+}
+
+#topbar-time {
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    width: 20vw;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+}
+
+#topbar-welcome {
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+    text-align: center;
+    width: 60vw;
+}
+
+#topbar-status {
+    width: 20vw;
+    text-align: right;
+    background-color: green;
+}
+
+#top-bar-time {
+    margin-left: 4vh;
+}
+
+#topbar-net {
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    width: 1.8vw;
+    float: left;
+    margin-top: 0.4vh;
+}
+
+#topbar-battery {
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    width: 1.8vw;
+    float: left;
+    padding-top: 0.4vh;
+    margin-left: 1.5vh
+}
+
+#topbar-status-items {
+    display: table;
+    margin-right: 0.5vh;
+    float: right;
+    width: 5vw;
+    height: 3vh;
+}
+
+#navbar {
+
+}
