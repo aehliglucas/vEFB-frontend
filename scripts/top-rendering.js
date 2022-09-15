@@ -38,6 +38,11 @@ function show_context_menu() {
     }
 }
 
+function render_page_title(text) {
+    let heading = document.getElementById('page-title');
+    heading.innerText = text
+}
+
 // function make_menu_usable_on_mobile() {
 //     document.getElementById('btn-settings').ontouchstart = function (e) {
 //         alert("Menu is work in progress...")
@@ -50,4 +55,5 @@ window.onload = function() {
     setInterval(render_top_bar_time, 1000);
     render_top_bar_welcome()
     // make_menu_usable_on_mobile()
+    render_page_title("Flight Information")
 }
